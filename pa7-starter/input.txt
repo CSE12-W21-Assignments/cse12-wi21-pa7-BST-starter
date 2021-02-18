@@ -1,0 +1,3 @@
+mySample.txt, /home, 02/01/2021
+mySample1.txt, /root, 02/01/2021
+mySample2.txt, /user, 02/06/2021
