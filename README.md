@@ -208,7 +208,7 @@ If the `name`, `dir`, or `date` is `null`, then do not add anything to the FileS
 
 #### `public ArrayList<String> findFileNamesByDate(String date)`
 
-Given a `date`, return an ArrayList of file names that correspond to this date. This list should have the file names in the order that they were added *with the exception of duplicates*. When a duplicate file is passed in, it should *update* the original FileData without changing its position in the ArrayList.   
+Given a `date`, return an ArrayList of file names that correspond to this date. This list should have the file names in the order that they were added. When a duplicate file is passed in, it should *update* the original FileData without changing its position in the ArrayList.   
 If the `date` given is `null`, return `null`.
 
 #### `public FileSystem filter(String startDate, String endDate)`
