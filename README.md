@@ -131,9 +131,10 @@ A BST that uses the file name as the key and the `FileData` as the value.
 
 ##### `dateTree`
 
-A BST that uses the file date (format: mm/dd/yyyy) as the key and a list of FileData as the value. This list should keep track of the frames in the order that they arrive in.   
+A BST that uses the file date in a different format (format: yyyy/mm/dd) as the key and a list of FileData as the value. This list should keep track of the frames in the order that they arrive in.   
 
-![](https://i.imgur.com/LJZtKCd.png)
+![](https://i.imgur.com/hlOvqBl.png)
+
 
 
 
@@ -208,8 +209,7 @@ If the `name`, `dir`, or `date` is `null`, then do not add anything to the FileS
 
 #### `public ArrayList<String> findFileNamesByDate(String date)`
 
-Given a `date`, return an ArrayList of file names that correspond to this date. This list should have the file names in the order that they were added.
-
+Given a `date` (format: mm/dd/yyyy), return an ArrayList of file names that correspond to this date. This list should have the file names in the order that they were added *with the exception of duplicates*. When a duplicate file is passed in, it should *update* the original FileData without changing its position in the ArrayList.   
 If the `date` given is `null`, return `null`.
 
 #### `public FileSystem filter(String startDate, String endDate)`
@@ -219,13 +219,15 @@ Assume the given parameters are valid and non-null.
 
 Example: Let's call `filter("01/01/2021", "02/14/2021")` on a `FileSystem` with the following `dateTree`:   
 
-![](https://i.imgur.com/h3Uxt37.png)  
+![](https://i.imgur.com/dlQBJfT.png)
+
 
 
 
 It should return a **FileSystem** with a `dateTree` that looks like the following (note: there should be a populated `nameTree` with the same entries):   
 
-![](https://i.imgur.com/bBNgMHG.png)  
+![](https://i.imgur.com/jDzGOt0.png)
+
 
 
 #### `public FileSystem filter(String wildCard)`
