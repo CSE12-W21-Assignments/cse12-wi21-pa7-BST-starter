@@ -131,7 +131,7 @@ A BST that uses the file name as the key and the `FileData` as the value.
 
 ##### `dateTree`
 
-A BST that uses the file date in a different format (format: yyyy/mm/dd) as the key and a list of FileData as the value. This list should keep track of the frames in the order that they arrive in.   
+A BST that uses the file date in a different format (format: yyyy/mm/dd) as the key and a list of FileData as the value. This list should keep track of the files in the order that they arrive in.   
 
 ![](https://i.imgur.com/hlOvqBl.png)
 
