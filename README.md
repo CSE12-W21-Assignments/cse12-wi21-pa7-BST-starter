@@ -219,7 +219,7 @@ If the `date` given is `null`, return `null`.
 Given a `startDate` and an `endDate` (format: mm/dd/yyyy), return a new FileSystem that contains only the files that are within the range (`startDate` is inclusive, `endDate` is exclusive).
 Assume the given parameters are valid and non-null.  
 
-Example: Let's call `filter("01/01/2021", "02/14/2021")` on a `FileSystem` with the following `dateTree`:   
+Example: Let's call `filter("02/01/2021", "02/14/2021")` on a `FileSystem` with the following `dateTree`:   
 
 ![](https://i.imgur.com/dlQBJfT.png)
 
