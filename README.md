@@ -237,7 +237,7 @@ It should return a **FileSystem** with a `dateTree` that looks like the followin
 Give a string `wildCard`, return a new FileSystem that contains only the files with names that contain the `wildCard` string. Note that this wildcard can be found anywhere in the file name (if the wild card is `test`, then `test.txt`, `thistest.txt` and `thistest` would all be files that should be selected in the filter)  
 Assume the given parameter is valid and non-null. 
 
-Example: Let's call `filter("mySam")` on a `FileSystem` with the following `dateTree`:  
+Example: Let's call `filter("mySam")` on a `FileSystem` with the following `nameTree`:  
 
 ![](https://i.imgur.com/YBsdlMK.png)  
 
